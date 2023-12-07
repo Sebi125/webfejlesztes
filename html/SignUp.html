@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Földesi Ferenc Sebestyén">
+    <meta name="description" content="Regisztrációs űrlap">
+    <title>Sign up!</title>
+    <link rel="icon" type="image/x-icon" href="../kepek/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../jquerry/jquerry3.7.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../jquerry/validation/dist/jquery.validate.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <!--Bal doboz logonak-->
+        <div class="bal">
+            <img src="../kepek/logo.png" alt="" id="logo">
+            <div>Corvinus Fitness</div>
+        </div>
+        <!--kozep doboz navbar-->
+        <div class="kozep">
+            <ul class="navbar">
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="#" class="active">Sign Up</a></li>
+                <li><a href="../html/fitnessCalculator.html">Fitness Calculator</a></li>
+                <li><a href="../html/galeria.html">Galeria</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Work out at the Corvinus Gym!</h1>
+        <form method="post" action="http://szamtud.uni-corvinus.hu/receive.php" id="signupForm" novalidate>
+            <div class="input-container">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-container">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-container">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+            <div class="input-container">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="input-container">
+                <label for="agree">Agree to terms:</label>
+                <input type="checkbox" id="agree" name="agree" required>
+            </div>
+            <div class="input-container">
+                <label for="gender">Gender:</label>
+                <div class="gender-radio">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="input-container">
+                <label for="fitnesslevel">Fitness Level:</label>
+                <select id="fitnesslevel" name="fitnesslevel" required>
+                    <option value="">Select Fitness Level</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="../javascript/script.js"></script>
+</body>
+</html>

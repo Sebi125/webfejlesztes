@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Földesi Ferenc Sebestyén">
+    <meta name="description" content="Bmi kalkulátor és annak egy rövid leírása">
+    <title>Fitness Calculator</title>
+    <link rel="icon" type="image/x-icon" href="../kepek/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <!--Bal doboz logonak-->
+        <div class="bal">
+            <img src="../kepek/logo.png" alt="" id="logo">
+            <div>Corvinus Fitness</div>
+        </div>
+        <!--kozep doboz navbar-->
+        <div class="kozep">
+            <ul class="navbar">
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/SignUp.html">Sign Up</a></li>
+                <li><a href="#" class="active">Fitness Calculator</a></li>
+                <li><a href="../html/galeria.html">Galeria</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="calculator-container">
+        <div class="container">
+            <div class="calculator">
+                <h1>Fitness Calculator</h1>
+                <div class="input-container">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" placeholder="Enter your weight">
+                </div>
+                <div class="input-container">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" placeholder="Enter your height">
+                </div>
+                <div class="input-container">
+                <label for="gender">Gender:</label>
+                <select id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                </div>
+                <div class="input-container">
+                <label for="workouts">Workouts per week:</label>
+                <input type="number" id="workouts" placeholder="Enter workouts per week">
+                </div>
+                <button onclick="calculateBMI()">Calculate BMI</button>
+                <div class="result">
+                <h2>Your BMI:</h2>
+                <p id="bmiResult"></p>
+                </div>
+            </div>
+        </div>
+        <div class="explanation">
+            <h2>What is a BMI Calculator?</h2>
+            <p>
+                BMI stands for Body Mass Index. It is a measure of body fat based on your weight and height.
+                It helps assess whether you are underweight, normal weight, overweight, or obese.
+                The formula to calculate BMI is weight in kilograms divided by the square of height in meters.
+                Use the calculator above to find your BMI and understand your body's composition better.
+            </p>
+        </div>
+    </div>
+    <script src="..//javascript/script.js"></script>
+</body>
+</html>
