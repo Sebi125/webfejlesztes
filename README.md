@@ -1,6 +1,8 @@
 # webfejlesztes
 Földesi Ferenc Sebestyén
 
+https://sebi125.github.io/webfejlesztes/html/index.html
+
 Egy edzőterem oldalát csináltam meg, az első oldalt egy rövid bemutató látható, a másodikon egy regisztrációs form, a harmadikon egy Bmi kalkulátor egy rövid magyarázattal, a negyedik oldalon pedig egy galéria edzőtermi képekkel.
 
 fitnessCalculator oldalon használtam van a javascriptem.
